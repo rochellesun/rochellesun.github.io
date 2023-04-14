@@ -21,6 +21,8 @@ article{
 
 body{
 	font-family: Garamond, Georgia, serif;
+	text-align: justify;
+
 }
 
 footer{
@@ -61,7 +63,6 @@ img{
 p{
 	padding: 5px;
 	font-size: 18px;
-	text-align: justify;
 }
 
 section { 

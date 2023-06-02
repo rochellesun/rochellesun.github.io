@@ -30,6 +30,17 @@ footer{
 	color: black;
 }
 
+figcaption{
+       font-family: 'Libre Baskerville'; 
+	text-align: right;
+	font-size: 12px;
+	font-style: italic;
+}
+
+figure{
+	margin: 2rem 0;
+}
+
 header{
        font-family: 'Libre Baskerville'; 
 	text-align: left;
@@ -71,18 +82,14 @@ section {
 }
 
 .banner{
-	display: block;
-	margin-top: 50px;
-	margin-bottom: 10px;
- 	margin-left: auto;
- 	margin-right: auto;
-	width: 100%;
 	height: auto;
+	width: 100%;
+	max-width: 900 px;
 }
 
 .container{ 
 	margin: 0 auto; 
-	width: 80%; 
+	width: 90%; 
 	max-width: 900px; 
 }
 

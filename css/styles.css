@@ -30,11 +30,14 @@ footer{
 	color: black;
 }
 
-figure{
-	margin: 2rem 0;
+figcaption{
 	text-align: right;
 	font-size: 12px;
 	font-style: italic;
+}
+
+figure{
+	margin: 2rem 0;
 }
 
 header{

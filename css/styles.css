@@ -6,12 +6,12 @@ a:link{
 	color:black;
 }
 
-a:hover{
-	color:gray;
-}
-
 a:visited{
 	color:black;
+}
+
+a:hover{
+	color:gray;
 }
 
 article{

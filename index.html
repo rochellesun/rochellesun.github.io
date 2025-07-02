@@ -12,6 +12,24 @@
     <title>Rochelle Sun</title>
     <link rel="icon" type="image/x-icon" href="/files/img/favicon.ico">
   </head>
+
+<script>
+  function toggleAccordion(id) {
+    const content = document.getElementById(id);
+    const isVisible = content.style.display === 'block';
+
+    // Close all
+    document.querySelectorAll('.accordion-content').forEach(div => div.style.display = 'none');
+    document.querySelectorAll('.accordion-toggle').forEach(btn => btn.classList.remove('active'));
+
+    // Toggle current
+    if (!isVisible) {
+      content.style.display = 'block';
+      document.querySelector(`[onclick="toggleAccordion('${id}')"]`).classList.add('active');
+    }
+  }
+</script>
+
   
   <body>
     <header>
@@ -85,17 +103,86 @@
 	          </p>
 		</div>
            </div>
-	<div class="sbs">
-	        <h2 class="title">WORKING PAPERS</h2>
-	        <div>
-			<p><strong><a href="files/papers/CBAM_APSA_2024.pdf">
-				Carbon Copy: US Public Opinion on the Diffusion of Carbon Border Adjustment Mechanisms</a></strong>
-				<I>with Tayla Ingles and Dustin Tingley</I>.</p>
-			<p><strong><a href="files/papers/Vaccine_and_Antibiotics_Conjoint.pdf">
-				Beyond Parochial Altruism: Cross-Ethnic Solidarities and Shared Crises in Lebanon</a></strong>
-				<I>with Amanda Rizkallah and Melani Cammett</I>.</p>
-	        </div>
-	      </div>
+<div class="sbs">
+  <h2 class="title">PUBLICATIONS</h2>
+  <div class="accordion-wrapper">
+    <div class="accordion-item">
+      <button class="accordion-toggle" onclick="toggleAccordion('working')">WORKING PAPERS</button>
+      <div id="working" class="accordion-content">
+	  <div class="pub-entry">
+	        <p><strong><a href="files/papers/CBAM_APSA_2024.pdf">
+        	  Carbon Copy: US Public Opinion on the Diffusion of Carbon Border Adjustment Mechanisms</a></strong></p>
+              	<p class="author"><i>with Tayla Ingles and Dustin Tingley. Under review.</I></p> </div>
+          <div class="pub-entry"> <p><strong><a href="files/papers/Vaccine_and_Antibiotics_Conjoint.pdf">
+	          Beyond Parochial Altruism: Cross-Ethnic Solidarities and Shared Crises in Lebanon</a></strong></p>
+        	      <p class="author"><i>with Amanda Rizkallah and Melani Cammett. Under review.</I></p> </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-toggle" onclick="toggleAccordion('published')">PUBLISHED PAPERS</button>
+<div id="published" class="accordion-content">
+  <div class="pub-entry">
+    <p><a href="https://doi.org/10.1016/j.lana.2024.100847" class="pub-title">
+      Continuity of Care During Severe Civil Unrest with a Model of Community-Based HIV Care: A Retrospective Cohort Study from Haiti
+    </a></p>
+    <p class="author">Joseph, P; <strong>Sun, R</strong>; Guiteau, C; Jean Juste, MA; Dorvil, N; Vilbrun, SC; Secours, R; Severe, K; Raymond, P; Cecoute, F; Jean Baptiste, W; Forrestale, GP; Cadet, S; Marcelin, A; Deschamps, MM; Dua, A; Cheung, HC; Pape, JW; Koenig, SP</p>
+    <p class="journal"><strong><em>Lancet Regional Health – Americas</em></strong> 2024; 37.</p>
+  </div>
+
+  <div class="pub-entry">
+    <p><a href="https://link.springer.com/article/10.1007/s12325-023-02771-z" class="pub-title">
+      Projected Impact of Omidubicel-onlv on Racial/Ethnic Disparities in Allogeneic Hematopoietic Cell Transplantation (Allo-HCT) Outcomes in Hematologic Malignancies
+    </a></p>
+    <p class="author">Khera, N; Edwards, ML; Song, Y; <strong>Sun, R</strong>; Manghani, R; Shin, H; Simantov, R; Signorovitch, J; Sivaraman, S; Gergis, U</p>
+    <p class="journal"><strong><em>Advances in Therapy</em></strong> 2024; 41: 1637–1651.</p>
+  </div>
+
+  <div class="pub-entry">
+    <p><a href="https://www.jmcp.org/doi/full/10.18553/jmcp.2022.28.7.740" class="pub-title">
+      Cost-effectiveness Analysis of Semaglutide 2.4 mg for the Treatment of Adult Patients with Overweight and Obesity in the United States
+    </a></p>
+    <p class="author">Kim, N; Wang, J; Burudpakdee, C; Song, Y; Ramasamy, A; Xie, Y; <strong>Sun, R</strong>; Kumar, N; Wu, EQ; Sullivan, SD</p>
+    <p class="journal"><strong><em>Journal of Managed Care and Pharmacy</em></strong> 2022; 28(7): 740–752.</p>
+  </div>
+
+  <div class="pub-entry">
+    <p><a href="https://thejournalofheadacheandpain.biomedcentral.com/articles/10.1186/s10194-022-01411-1" class="pub-title">
+      Real-World Effectiveness of Fremanezumab in Migraine Patients Initiating Treatment in the United States: Results from a Retrospective Chart Study
+    </a></p>
+    <p class="author">Driessen, MT; Cohen, JM; Patterson-Lomba, O; Thompson, SF; Seminerio, M; Carr, K; Totev, TI; <strong>Sun, R</strong>; Yim, E; Mu, F; Ayyagari, R</p>
+    <p class="journal"><strong><em>Journal of Headache and Pain</em></strong> 2022; 23(1): 47.</p>
+  </div>
+
+  <div class="pub-entry">
+    <p><a href="https://thejournalofheadacheandpain.biomedcentral.com/articles/10.1186/s10194-022-01415-x" class="pub-title">
+      Real-world Effectiveness After Initiating Fremanezumab Treatment in US Patients With Episodic and Chronic Migraine or Difficult-to-Treat Migraine
+    </a></p>
+    <p class="author">Driessen, MT; Cohen, JM; Thompson, SF; Patterson-Lomba, O; Seminerio, MJ; Carr, K; Totev, TI; <strong>Sun, R</strong>; Yim, E; Mu, F; Ayyagari, R</p>
+    <p class="journal"><strong><em>Journal of Headache and Pain</em></strong> 2022; 23(1): 56.</p>
+  </div>
+
+  <div class="pub-entry">
+    <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8814262/" class="pub-title">
+      Upadacitinib compared with Adalimumab in the Treatment of Patients with Moderate-to-Severe Rheumatoid Arthritis
+    </a></p>
+    <p class="author">Conaghan, P; Cohen, S; Burmester, G; Mysler, E; Nash, P; Tanaka, Y; Rigby, W; Patel, J; Shaw, T; Betts, KA; Patel, P; Liu, J; <strong>Sun, R</strong>; Fleischmann, R</p>
+    <p class="journal"><strong><em>Rheumatology and Therapy</em></strong> 2022; 9(1): 191–206.</p>
+  </div>
+
+  <div class="pub-entry">
+    <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8661077/" class="pub-title">
+      Superior Outcomes With Continuing Tenofovir Versus Switching to Zidovudine in Second-Line Antiretroviral Therapy in Haiti
+    </a></p>
+    <p class="author">Pierre, S; Bocharova, I; Nguyen, C; Homeus, F; Julmiste, G; Macius, Y; Rouzier, V; Severe, P; Deschamps, MM; Guiteau, C; Bellot, C; Wu, J; Rivera, V; <strong>Sun, R</strong>; Pape, JW; Liautaud, BL; Koenig, SP</p>
+    <p class="journal"><strong><em>Open Forum Infectious Diseases</em></strong> 2021; 8(12): 559.</p>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
 
 	<div class="sbs">
 	        <h2 class="title">MENTORSHIP</h2>

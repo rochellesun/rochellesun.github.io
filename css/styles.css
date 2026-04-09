@@ -43,7 +43,7 @@ figure{
 }
 
 header{
-       font-family: 'Libre Baskerville'; 
+    font-family: 'Libre Baskerville'; 
 	text-align: left;
 	font-weight: bold;
 	padding: 20px;
@@ -151,6 +151,9 @@ section {
 	}
 	.banner {
 		height: 240px;
+	}
+	.header {
+        padding: 20px 0;
 	}
 }
 .accordion-item {

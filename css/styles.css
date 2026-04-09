@@ -35,6 +35,7 @@ figcaption{
 	text-align: right;
 	font-size: 12px;
 	font-style: italic;
+	margin-top: 5px;
 }
 
 figure{
@@ -58,6 +59,8 @@ h2{
 	font-family: Trebuchet, sans-serif; 
 	font-size: 20px;
 	padding: 5px;
+	margin-right: 30px;
+	text-align:right;
 }
 
 h3{	
@@ -65,6 +68,7 @@ h3{
 	font-weight:bold;
 	text-align:center;
 }
+
 
 img{
 	max-width: 100%;
@@ -82,9 +86,11 @@ section {
 }
 
 .banner{
-	height: auto;
 	width: 100%;
-	max-width: 900 px;
+	height: 380px;
+	object-fit: cover;
+	object-position: center;
+	display: block;
 }
 
 .container{ 
@@ -105,7 +111,7 @@ section {
 
 .sbs{
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 2fr 3fr;
 }
 
 .subhead{
@@ -114,6 +120,8 @@ section {
 	font-style: italic;
 	font-weight: normal;
 	font-size: 18px;
+	text-align: left;
+	
 }
 
 .title{
@@ -140,6 +148,9 @@ section {
 	}
 	.orgdesc{
 		grid-template-columns: 1fr;
+	}
+	.banner {
+		height: 240px;
 	}
 }
 .accordion-item {
@@ -211,3 +222,12 @@ section {
   font-size: 0.95em;
 } 
 
+.headshot {
+	width: 100%;
+	height: auto;
+	display: block;
+	padding-top: 25px;
+	padding-right: 30px;
+	padding-bottom: 25px;
+	box-sizing: border-box;
+}

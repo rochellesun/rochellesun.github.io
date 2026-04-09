@@ -95,7 +95,7 @@ section {
 
 .container{ 
 	margin: 0 auto; 
-	width: 100%; 
+	width: 90%; 
 	max-width: 900px; 
 }
 
@@ -150,6 +150,7 @@ section {
 		grid-template-columns: 1fr;
 	}
 	.banner {
+		padding: 0px;
 		height: 240px;
 	}
 	.header {

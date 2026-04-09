@@ -154,8 +154,13 @@ section {
 		height: 240px;
 	}
 	.header {
-        padding: 20px 0;
-	}
+        margin: 0;
+        padding: 20px;
+    }
+    figure {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }
 .accordion-item {
   margin-bottom: 0.5rem;

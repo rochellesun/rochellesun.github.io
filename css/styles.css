@@ -31,7 +31,7 @@ footer{
 }
 
 figcaption{
-       font-family: 'Libre Baskerville'; 
+    font-family: 'Libre Baskerville'; 
 	text-align: right;
 	font-size: 12px;
 	font-style: italic;
@@ -95,7 +95,7 @@ section {
 
 .container{ 
 	margin: 0 auto; 
-	width: 90%; 
+	width: 100%; 
 	max-width: 900px; 
 }
 

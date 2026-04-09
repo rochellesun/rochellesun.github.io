@@ -128,6 +128,16 @@ section {
 	padding-left: 15px;
 }
 
+.headshot {
+	width: 100%;
+	height: auto;
+	display: block;
+	padding-top: 25px;
+	padding-right: 30px;
+	padding-bottom: 25px;
+	box-sizing: border-box;
+}
+
 @media (max-width: 680px) {
 	footer{
 		margin-top: 50px;
@@ -160,6 +170,13 @@ section {
     figure {
         margin-left: -20px;
         margin-right: -20px;
+    }
+	.title {
+        display: flex;
+        justify-content: center;
+    }
+	.headshot {
+        padding-right: 0;
     }
 }
 .accordion-item {
@@ -231,12 +248,4 @@ section {
   font-size: 0.95em;
 } 
 
-.headshot {
-	width: 100%;
-	height: auto;
-	display: block;
-	padding-top: 25px;
-	padding-right: 30px;
-	padding-bottom: 25px;
-	box-sizing: border-box;
-}
+
